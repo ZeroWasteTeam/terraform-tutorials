@@ -1,4 +1,4 @@
-#Getting Started
+# Getting Started
 * This document will help you set up terraform and create a resource group in azure using terraform
 * There is no attempt made to introduce the advantages of Terraform. It's assumed that this is known.
 
