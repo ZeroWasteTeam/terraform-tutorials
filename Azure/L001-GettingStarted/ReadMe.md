@@ -80,7 +80,7 @@ resource "azurerm_resource_group" "rg" {
 * The resource group could be destroyed by the command `terraform apply resourcegroup.destroy.tfplan`
 * The resource group was not removed in Azure, need to investigate
 
-Reference:
+### Reference
 https://docs.microsoft.com/en-us/azure/developer/terraform/get-started-cloud-shell
 https://learn.hashicorp.com/collections/terraform/azure-get-started?utm_source=terraform_io_download
 https://hub.docker.com/r/zenika/terraform-azure-cli
