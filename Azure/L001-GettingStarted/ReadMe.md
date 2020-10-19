@@ -1,19 +1,19 @@
 #Getting Started
-
-## Prerequisities
-* Why use Terraform with azure is not covered here.
-* Given the you have decided to use terraform, the below steps help you create a resources in azure using terraform
-* Its expected that you have docker installed in your machine
-* You have a azure subscription
-
+* This document will help you set up terraform and create a resource group in azure using terraform
+* There is no attempt made to introduce the advantages of Terraform. It's assumed that this is known.
 
 ## Objective
 * Create a resource group using terraform
 
-## Theory
+## Prerequisities
+* Windows 10 (or linux) machine with docker installed
+* Azure subscription
+
+## Overview of the steps
 * Terraform has to login to azure to create resources
-* It's recommened that terraform logins as service principle to create resources
+* One of the way for Terraform to login to azure is as a service principle
 * Service principle is a application that can create/modify/delete resources in azure
+* So in this excercise, we will create a service principle application and login to azure as the service principle using Terraform
 
 ## Steps involved
 
@@ -35,7 +35,7 @@
 
 ### Apply destruction plan
 
-
+Reference:
 https://docs.microsoft.com/en-us/azure/developer/terraform/create-linux-virtual-machine-with-infrastructure
 https://learn.hashicorp.com/collections/terraform/azure-get-started?utm_source=terraform_io_download
 https://hub.docker.com/r/zenika/terraform-azure-cli
