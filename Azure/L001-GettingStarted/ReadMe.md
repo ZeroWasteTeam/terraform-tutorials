@@ -19,19 +19,23 @@
 
 ### Run the Azure Terraform VM
 * Run the below command to run Terraform Azure VM locally
-`docker container run -it --rm -v <C:\YourWorkingDir>:/workspace zenika/terraform-azure-cli:latest`
+```
+docker container run -it --rm -v <C:\YourWorkingDir>:/workspace zenika/terraform-azure-cli:latest
+```
 * Remember to replace your working directory in the above command
 * After running the command, you will have a terminal to the linux machine running as docker
 
 ### Login as user in to azure using azure cli
 * In docker, login to azure using the below command
-`az login`
+```az login```
 * Please follow the login steps
 * Once you login, your subscription id will be listed. Please make a note of it for the next step
 
 ### Create a service principle in azure
 * Run the below command to create a service principle
-`az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/<subscription_id>"`
+```
+az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/<subscription_id>"
+```
 * Please note the appid (client id), password (client secret), tenant id being displayed
 
 ### Log out of Azure
