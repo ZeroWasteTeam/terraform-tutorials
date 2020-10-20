@@ -19,7 +19,7 @@
 
 ### Run the Azure Terraform VM
 * Run the below command to run Terraform Azure VM locally
-`docker container run -it --rm --mount <C:\YourWorkingDir>:/workspace zenika/terraform-azure-cli:latest`
+`docker container run -it --rm -v <C:\YourWorkingDir>:/workspace zenika/terraform-azure-cli:latest`
 * Remember to replace your working directory in the above command
 * After running the command, you will have a terminal to the linux machine running as docker
 
